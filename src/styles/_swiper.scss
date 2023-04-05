@@ -3,10 +3,10 @@
     height: auto;
   
     &-scrollbar {
-      bottom: 0;
+      bottom: 5px;
   
       &-drag {
-        background-color: $color-pink;
+        background-color: $color-yellow;
       }
     }
   }

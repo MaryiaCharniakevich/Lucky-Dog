@@ -27,20 +27,18 @@
   }
 
   &__info {
-    width: 60%;
-    margin-right: -10%;
-   
+    width: 80%;
+    padding: $p-5; 
+    margin: $m-6;  
     text-align: center;
 
     background-color: $primary-color;
 
     &_btn {
-      width: 320px;
-      height: 60px;
-      padding: 12px 10px;     
+     padding: $p-2 $p-5;        
 
-      font-size: $font-16;
-      font-weight: $font-w-500;
+      font-size: $font-18;
+      font-weight: $font-w-700;
 
       line-height: 75px;
       text-decoration: none;
@@ -48,6 +46,10 @@
 
       color: $color-text;
       background-color: $color-orange;
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

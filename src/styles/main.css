@@ -105,22 +105,13 @@ body {
 }
 
 .img-list {
-  width: 1005;
-  list-style: none;
-  display: inline-block;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
 }
 
 .image {
   width: 100%;
-}
-
-.arrow-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 20%;
-  background: rgb(238, 231, 231);
-  border-radius: 15px;
 }
 
 .icons {
@@ -163,7 +154,7 @@ body {
 
 .title {
   padding: 0 3rem;
-  margin: 0 3rem;
+  margin: 0 5rem;
   font-size: 64px;
   font-weight: 900;
   text-decoration: none;
@@ -238,6 +229,7 @@ body {
   width: 320px;
   height: 80px;
   margin: 2rem;
+  margin-left: 38%;
   text-decoration: none;
   line-height: 75px;
   border-radius: 45px;
@@ -250,6 +242,50 @@ body {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 .btn:hover {
+  background: rgb(253, 152, 79);
+  box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+  transform: translateY(-3px);
+}
+
+.btn-next {
+  display: inline-block;
+  width: 25%;
+  height: 30px;
+  margin: 2rem;
+  margin-left: 38%;
+  text-decoration: none;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(rgb(238, 155, 130), rgb(255, 177, 32));
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-next:hover {
+  background: rgb(253, 152, 79);
+  box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+}
+
+.btn-price {
+  transition: all 0.3s;
+  display: inline-block;
+  width: 320px;
+  height: 80px;
+  margin: 2rem;
+  text-decoration: none;
+  line-height: 75px;
+  border-radius: 45px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(rgb(238, 155, 130), rgb(255, 177, 32));
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.btn-price:hover {
   background: rgb(253, 152, 79);
   box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
   transform: translateY(-3px);
@@ -281,10 +317,10 @@ td {
   height: auto;
 }
 .swiper-scrollbar {
-  bottom: 0;
+  bottom: 5px;
 }
 .swiper-scrollbar-drag {
-  background-color: rgb(253, 79, 121);
+  background-color: rgb(241, 235, 76);
 }
 
 .navbar {
@@ -310,7 +346,6 @@ td {
 
 .services {
   display: flex;
-  flex-wrap: wrap;
 }
 .services__card {
   transition: all 0.3s;
@@ -335,12 +370,14 @@ td {
   text-align: center;
   font-size: 24px;
   color: rgb(39, 38, 38);
+}
+.services__title:hover {
   cursor: pointer;
+  text-decoration: underline;
 }
 
 .reviews {
   display: flex;
-  flex-wrap: wrap;
 }
 .reviews__card {
   width: 33.3333333333%;
@@ -359,6 +396,7 @@ td {
   text-decoration: none;
   text-align: left;
   font-size: 24px;
+  font-weight: 700;
   color: rgb(39, 38, 38);
   cursor: pointer;
 }
@@ -366,7 +404,6 @@ td {
   padding-bottom: 1rem;
   text-align: left;
   font-size: 18px;
-  font-weight: 700;
   color: rgb(39, 38, 38);
   line-height: 1.5;
 }
@@ -461,22 +498,24 @@ td {
   padding: 2rem;
 }
 .section-1__info {
-  width: 60%;
-  margin-right: -10%;
+  width: 80%;
+  padding: 5rem;
+  margin: 6rem;
   text-align: center;
   background-color: rgb(238, 231, 231);
 }
 .section-1__info_btn {
-  width: 320px;
-  height: 60px;
-  padding: 12px 10px;
-  font-size: 16px;
-  font-weight: 500;
+  padding: 2rem 5rem;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 75px;
   text-decoration: none;
   border-radius: 5px;
   color: rgb(39, 38, 38);
   background-color: rgb(253, 152, 79);
+}
+.section-1__info_btn:hover {
+  cursor: pointer;
 }
 
 .section {
@@ -578,4 +617,149 @@ td {
 .bottom__rights {
   color: rgb(39, 38, 38);
   font-size: 12px;
+}
+
+@media only screen and (max-width: 413.99px) {
+  .lists {
+    display: block;
+  }
+  .list {
+    display: block;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .header {
+    display: block;
+  }
+  .enter {
+    display: none;
+  }
+  .icons__icon {
+    width: 20px;
+  }
+  .section__block {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .section__block_description {
+    display: block;
+    width: 100%;
+  }
+  .title {
+    padding: 0 3rem;
+    margin: 0 3rem;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(39, 38, 38);
+  }
+  .title_subtitle {
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(253, 152, 79);
+  }
+  .title-section {
+    padding: 2rem;
+    color: rgb(113, 91, 94);
+    font-size: 28px;
+    font-weight: 700;
+    text-align: left;
+    -webkit-text-decoration: overline 5px solid rgb(253, 152, 79);
+            text-decoration: overline 5px solid rgb(253, 152, 79);
+  }
+  .title-description {
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 2rem;
+    color: rgb(39, 38, 38);
+    font-size: 20px;
+    text-align: left;
+  }
+  .title-note {
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 0.5rem;
+    color: rgb(39, 38, 38);
+    font-size: 16px;
+    text-align: left;
+  }
+  .title__contacts {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(39, 38, 38);
+    font-size: 20px;
+  }
+  .title__contacts_description {
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 14px;
+  }
+  .title__logo {
+    padding: 1rem 2rem 0;
+  }
+}
+@media only screen and (max-width: 779.99px) {
+  .enter {
+    display: none;
+  }
+  .icons__icon {
+    width: 32px;
+  }
+  .title {
+    padding: 0 3rem;
+    margin: 0 3rem;
+    font-size: 48px;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(39, 38, 38);
+  }
+  .title_subtitle {
+    font-size: 48px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: left;
+    color: rgb(253, 152, 79);
+  }
+  .title-section {
+    padding: 2rem;
+    color: rgb(113, 91, 94);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: left;
+    -webkit-text-decoration: overline 5px solid rgb(253, 152, 79);
+            text-decoration: overline 5px solid rgb(253, 152, 79);
+  }
+  .title-description {
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 2rem;
+    color: rgb(39, 38, 38);
+    font-size: 20px;
+    text-align: left;
+  }
+  .title-note {
+    letter-spacing: 1px;
+    line-height: 1.3;
+    padding: 0.5rem;
+    color: rgb(39, 38, 38);
+    font-size: 18px;
+    text-align: left;
+  }
+  .title__contacts {
+    text-align: center;
+    padding: 1rem;
+    color: rgb(39, 38, 38);
+    font-size: 24px;
+  }
+  .title__contacts_description {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */

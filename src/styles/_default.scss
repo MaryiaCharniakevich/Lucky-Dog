@@ -57,22 +57,16 @@ body {
     color: $color-orange;
   }
 .img-list {
-    width: 1005;
-    list-style: none;
-    display: inline-block;     
+    width: 100%;
+    display: inline-flex;  
+    flex-wrap: wrap;   
       
 }
 .image {
     width: 100%;
 }
 
-.arrow-container {
-    @include flex();
-    width: 20%;
-    background: $primary-color;
-    border-radius: 15px;
 
-}
 
 .icons {
     display: flex;
@@ -124,7 +118,7 @@ body {
 
   .title {
     padding: 0 $p-3;
-    margin: 0 $m-3;    
+    margin: 0 $m-5;    
 
     font-size: $font-64;
     font-weight: $font-w-900;
@@ -136,7 +130,7 @@ body {
 
   
 
-    &_subtitle {
+    &_subtitle {      
       font-size: $font-64;
       font-weight: $font-w-900;
       // line-height: 75px;

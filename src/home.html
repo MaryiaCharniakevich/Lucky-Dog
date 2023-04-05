@@ -28,17 +28,6 @@
         </div>
         </nav>
     
-        <!-- <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-            Меню
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <li><button class="dropdown-item" type="button">Главная</button></li>
-            <li><button class="dropdown-item" type="button">Каталог</button></li>
-            <li><button class="dropdown-item" type="button">Контакты</button></li>
-            <li><button class="dropdown-item" type="button">Доставка</button></li>
-          </ul>
-        </div> -->
     
         <ul class="lists">
            <li class="list"><a href="./pages/hotel.html" class="link">Гостиница</a></li>
@@ -54,6 +43,7 @@
            <li class="list"><a href="./pages/vet pharmacy.html" class="link">Ветаптека</a></li>
         </ul>
 
+        
         <ul class="icons">
             <li class="navbar__list"><img class="header__icons_icon" src="./img/icons/viber.svg" alt="viber"></li>
             <li class="navbar__list"><img class="header__icons_icon" src="./img/icons/facebook.svg" alt="facebook"></li>
@@ -61,6 +51,7 @@
             <li class="navbar__list"><img class="header__icons_icon" src="./img/icons/instagram.svg" alt="instagram"></li>
         </ul>
 
+        
         <ul class="lists">
             <li class="navbar__list">+37529 111 11 11</li>
         </ul>
@@ -70,6 +61,7 @@
             <li class="navbar__list"><img class="header__icons_icon" src="./img/icons/ringer.svg" alt="callk"></li>
             <li class="navbar__list"><img class="header__icons_icon" src="./img/icons/mail.svg" alt="mail"></li>
         </ul>
+    
       </header>
 
     <main>
@@ -80,15 +72,13 @@
                 </div>
 
                 <div class="section-1__block_description">
-                   <h1 class="title">Центр для собак</h1>
-                   <h1 class="title_subtitle">Lucky Dog</h1>
+                   <h1 class="title">Центр для собак <span class="title_subtitle">Lucky Dog</span></h1>
 
-                   <ul>
-                    <li class="section-1__block_title">Хотите, чтобы малышу было уделено много внимания?</li>
-                    <li class="section-1__block_title">Хотите, чтобы питомец жил в хороших условиях, много гулял и играл на свежем воздухе?
-                    </li>
-                    <li class="section-1__block_title">Хотите уехать в отпуск, а любимого четверолапого друга оставить не с кем?  </li>
-                   </ul>
+                   <p class="title-note"><img class="done" src="./img/icons/done_outline.svg" alt="done">Хотите, чтобы малышу было уделено много внимания?</p>
+
+                   <p class="title-note"><img class="done" src="./img/icons/done_outline.svg" alt="done">Хотите, чтобы питомец жил в хороших условиях, много гулял и играл на свежем воздухе?</p>
+
+                   <p class="title-note"><img class="done" src="./img/icons/done_outline.svg" alt="done">Хотите уехать в отпуск, а любимого четверолапого друга оставить не с кем?</p>
 
                    <div class="section-1__info">
                     <p class="section-1__block_title">Мы вас понимаем! Вы отдыхаете — мы заботимся о ваших собачках по-домашнему!</p>
@@ -184,7 +174,7 @@
                     <p class="title-note"><img class="done" src="./img/icons/done_outline.svg" alt="done">Игрушки при необходимости.</p>
 
                     <div class="section-1__info">
-                        <p>Наличие ветпаспорта обязательно!
+                        <p class="title-note">Наличие ветпаспорта обязательно!
                             Мы не принимаем животных больных инфекционными заболеваниями!</p>
                     </div>
                 </div>
@@ -195,35 +185,43 @@
         <section class="section section-4">
             <div class="container">
                 <h3 class="title-section">Отзывы</h3>
-                <div class="reviews">
-                    <div class="reviews__card">
-                        <img class="reviews__card_image" src="./img/main/отзыв1.svg" alt="img">
-
-                        <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Елена</p>
-
-                        <p class="reviews__description">Мне понравилась клиника. Приятно было общаться с момента звонка по телефону. Администраторы подробно всё объясняют… ___</p>
-                    </div>
-
-                    <div class="reviews__card">
-                        <img class="reviews__card_image" src="./img/main/отзыв2.svg" alt="img">
-
-                        <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Виктория</p>
-
-                        <p class="reviews__description">Хочу выразить благодарность всему персоналу клиники. Обратилась в центр для содержания собаки на время отъезда ...___</p>
-                    </div>
-
-                    <div class="reviews__card">
-                        <img class="reviews__card_image" src="./img/main/отзыв3.svg" alt="img">
-
-                        <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Марина</p>
-
-                        <p class="reviews__description">Добрый день. Привозила собаку на груминг, все остались в полном восторге. Персональный подход к каждому ... ___</p>
-                    </div>
+                <div class="section__block">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="reviews">
+                                <div class="reviews__card">
+                                    <img class="reviews__card_image" src="./img/main/отзыв1.svg" alt="img">
+            
+                                    <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Елена</p>
+            
+                                    <p class="reviews__description">Мне понравилась клиника. Приятно было общаться с момента звонка по телефону. Администраторы подробно всё объясняют… ___</p>
+                                </div>
+  
+                                <div class="reviews__card">
+                                    <img class="reviews__card_image" src="./img/main/отзыв2.svg" alt="img">
+            
+                                    <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Виктория</p>
+            
+                                    <p class="reviews__description">Хочу выразить благодарность всему персоналу клиники. Обратилась в центр для содержания собаки на время отъезда ...___</p>
+                                </div>
+  
+                                <div class="reviews__card">
+                                    <img class="reviews__card_image" src="./img/main/отзыв3.svg" alt="img">
+            
+                                    <p class="reviews__title"><img src="./img/icons/ui woman.svg" alt="icon">Марина</p>
+            
+                                    <p class="reviews__description">Добрый день. Привозила собаку на груминг, все остались в полном восторге. Персональный подход к каждому ... ___</p>
+                                </div>                    
+                             
+                            </div>
+                          </div>
+                        </div>
+                       <div class="swiper-scrollbar"></div>
+                      </div>
                 </div>
 
-                <div class="arrow-container">
-                    <a href="./pages/reviews.html"><img src="./img/icons/arrow.png" alt="arrow"></a>
-                </div>
+                <a class="btn-next" href="./pages/reviews.html">Следующие</a>
             </div>
         </section>
 
@@ -231,18 +229,16 @@
             <div class="container">
                 <h3 class="title-section">Фотогалерея</h3>
 
-                <ul>
-                    <li class="img-list"><img src="./img/main/gallery.svg" alt=""></li>
-                    <li class="img-list"><img src="./img/main/galler2..svg" alt=""></li>
-                    <li class="img-list"><img src="./img/main/gallery.3.svg" alt=""></li>
-                    <li class="img-list"><img src="./img/main/gallery4.svg" alt=""></li>
-                    <li class="img-list"><img src="./img/main/gallery5..svg" alt=""></li>
-                    <li class="img-list"><img src="./img/main/gallery6.svg" alt=""></li>
-                </ul>
-
-                <div class="arrow-container">
-                    <a href="./pages/photogallery.html"><img src="./img/icons/arrow.png" alt="arrow"></a>
+                <div>
+                    <img class="img-list" src="./img/main/gallery.svg" alt="foto">
+                    <img class="img-list" src="./img/main/galler2..svg" alt="foto">
+                    <img class="img-list" src="./img/main/gallery.3.svg" alt="foto">
+                    <img class="img-list" src="./img/main/gallery4.svg" alt="foto">
+                    <img class="img-list" src="./img/main/gallery5..svg" alt="foto">
+                    <img class="img-list" src="./img/main/gallery6.svg" alt="foto">
                 </div>
+
+                <a class="btn-next" href="./pages/photogallery.html">Следующие</a>
             </div>
         </section>
         
@@ -303,7 +299,7 @@
       </nav>
     </div>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <script type="module" src="./js/swiper.js"></script>
     <script src="./js/burger.js" type="module"></script>

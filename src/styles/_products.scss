@@ -1,6 +1,6 @@
 .services {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     
 
     &__card {
@@ -33,7 +33,12 @@
         font-size: $font-24;
         color: $color-text;
 
-        cursor: pointer;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+       
     }
 }
 
@@ -41,7 +46,8 @@
 
 .reviews {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
+   
     
 
     &__card {
@@ -66,6 +72,7 @@
         text-decoration: none;
         text-align: left;
         font-size: $font-24;
+        font-weight: $font-w-700;
         color: $color-text;
 
         cursor: pointer;
@@ -76,8 +83,8 @@
        text-align: left;
         
        font-size: $font-18;
-       font-weight: $font-w-700;
+      
        color: $color-text;
        line-height: 1.5;
       }
-}
+    }
