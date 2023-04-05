@@ -1,0 +1,28 @@
+.btn {
+    @include transition();
+    
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    margin: $m-2;
+  
+    text-decoration: none;
+    line-height: 75px;
+    border-radius: 45px;
+    text-align: center;
+    letter-spacing: 1px;
+  
+    font-size: $font-20;
+    font-weight: $font-w-700;
+    
+    color: $color-white;
+    background: linear-gradient(rgb(238, 155, 130), rgb(255, 177, 32));
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  
+    &:hover {
+      background: $color-orange;
+      box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+  
+      transform: translateY(-3px);
+    }
+}

@@ -1,0 +1,23 @@
+.price
+ {
+    width: 100%;
+    padding: $p-1;
+    margin: $m-2;
+ }
+
+ th {
+    width: 20%;
+    padding: $p-1;
+    font-size: $font-16;
+    font-weight: $font-w-700;
+    
+    border-bottom: 1px solid $color-black;
+ }
+ 
+ td {
+    width: 100%;
+    padding: $p-1;
+    font-size: $font-14;
+    
+    border-bottom: 1px solid $color-black;
+ }

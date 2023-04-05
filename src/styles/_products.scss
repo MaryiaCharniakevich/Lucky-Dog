@@ -1,0 +1,83 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    &__card {
+        @include transition();
+        width: calc(100% / 3);
+        position: relative;
+      
+        
+        margin: $m-1;
+        padding: $p-2;
+      
+        text-align: center;
+        background-color: $color-white;
+        border-radius: 1rem;
+    
+        &:hover {
+          transform: translateY(-3px);
+        }
+
+        &_image {
+            width: 100%;
+            padding: 0;
+        }
+      }
+
+    &__title {
+        padding: $p-2;
+        text-decoration: none;
+        text-align: center;
+        font-size: $font-24;
+        color: $color-text;
+
+        cursor: pointer;
+    }
+}
+
+
+
+.reviews {
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    &__card {
+        width: calc(100% / 3);
+        position: relative;
+      
+        
+        margin: $m-1;
+        padding: $p-2;
+      
+        text-align: center;
+        background-color: $color-white;
+
+        &_image {
+            width: 100%;
+            padding: 0;
+        }
+      }
+
+    &__title {
+        padding: $p-2;
+        text-decoration: none;
+        text-align: left;
+        font-size: $font-24;
+        color: $color-text;
+
+        cursor: pointer;
+    }
+   
+    &__description {
+       padding-bottom: $p-1;
+       text-align: left;
+        
+       font-size: $font-18;
+       font-weight: $font-w-700;
+       color: $color-text;
+       line-height: 1.5;
+      }
+}

@@ -1,0 +1,123 @@
+.section-1 {
+  background-color: $third-color;
+  padding: 0;
+
+  &__block {
+    @include flex();
+
+    &_description {
+      width: 50%;
+      // padding: $p-2;
+      font-size: $font-16;
+
+      text-align: center;
+      background-color: $third-color;
+    }
+
+    &_title {
+      font-size: $font-24;
+      font-weight: $font-w-500;
+
+      color: $color-text;
+      text-align: left;
+
+      flex-wrap: wrap;    
+      padding: $p-2;
+    }
+  }
+
+  &__info {
+    width: 60%;
+    margin-right: -10%;
+   
+    text-align: center;
+
+    background-color: $primary-color;
+
+    &_btn {
+      width: 320px;
+      height: 60px;
+      padding: 12px 10px;     
+
+      font-size: $font-16;
+      font-weight: $font-w-500;
+
+      line-height: 75px;
+      text-decoration: none;
+      border-radius: 5px;
+
+      color: $color-text;
+      background-color: $color-orange;
+    }
+  }
+}
+
+
+.section {
+    padding: $p-5;
+   
+    background-color: $primary-color;
+  
+    &__block {
+      @include flex();
+  
+      &_image {
+        position: relative;
+  
+        width: 50%;
+        height: 50rem;
+  
+        
+      }
+  
+      &_title {
+        @include alignment();
+        @include transform(-25%, -45%);
+  
+        font-size: $font-24;
+        font-weight: $font-w-700;
+  
+        color: $color-pink;
+        text-align: center;
+      }
+  
+      &_description {
+        @include transition();
+  
+        width: 50%;
+        padding: $p-3;
+        font-size: $font-16;
+  
+        text-align: center;
+        background-color: $primary-color;
+  
+        &:hover {
+          cursor: pointer;
+  
+          transform: translateY(-5px);
+          box-shadow: 0 5px 10px $color-lightblue;
+        }
+      }
+    }
+  
+    &__image {
+      width: 450px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &-title {
+      padding-bottom: $p-2; 
+      font-size: $font-52;
+      font-weight: $font-w-700;
+  
+      color: $color-purple;
+      text-align: center;
+    }
+  }
+
+
+  .section-3,
+  .section-5 {
+    background-color: $third-color;
+  }
