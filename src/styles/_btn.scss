@@ -1,4 +1,4 @@
-.btn {
+.btn-main {
     @include transition();
     
     display: inline-block;
@@ -23,13 +23,15 @@
     &:hover {
       background: $color-orange;
       box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+      color: $color-white;      
   
-      transform: translateY(-3px);
+      transform: translateY(-1px);
     }
 }
 
 
 .btn-next {  
+  @include transition();
   display: inline-block;
   
   width: 25%;
@@ -53,6 +55,7 @@
   &:hover {
     background: $color-orange;
     box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+    color: $color-white;
   }
 
 }
@@ -71,6 +74,7 @@
   border-radius: 45px;
   text-align: center;
   letter-spacing: 1px;
+  border: 0;
 
   font-size: $font-20;
   font-weight: $font-w-700;
@@ -82,7 +86,44 @@
   &:hover {
     background: $color-orange;
     box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+    color: $color-white;
 
     transform: translateY(-3px);
   }
 }
+
+
+
+
+.btn-modal {
+    @include transition();
+    
+    display: inline-block;
+    width: 320px;
+    height: 80px;
+    margin: $m-2;
+    margin-left: 38%;
+   
+    text-decoration: none;
+    line-height: 75px;
+    border-radius: 45px;
+    text-align: center;
+    letter-spacing: 1px;
+    border: 0;
+   
+    font-size: $font-20;
+    font-weight: $font-w-700;
+    
+    color: $color-white;
+    background: linear-gradient(rgb(238, 155, 130), rgb(255, 177, 32));
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+      
+     &:hover {
+        background: $color-orange;
+        box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+        color: $color-white;      
+      
+        transform: translateY(-1px);
+        }
+    }
+  

@@ -1,11 +1,11 @@
 .services {
-    display: flex;
-    // flex-wrap: wrap;
+    @include flex();
+    flex-wrap: wrap;
     
 
     &__card {
         @include transition();
-        width: calc(100% / 3);
+        width: 30%;
         position: relative;
       
         
@@ -22,7 +22,7 @@
 
         &_image {
             width: 100%;
-            padding: 0;
+            padding: $p-1;
         }
       }
 
@@ -30,32 +30,29 @@
         padding: $p-2;
         text-decoration: none;
         text-align: center;
-        font-size: $font-24;
+        font-size: $font-20;
         color: $color-text;
 
         &:hover {
             cursor: pointer;
             text-decoration: underline;
+            color: $color-orange;
         }
-
-       
     }
 }
 
 
 
 .reviews {
-    display: flex;
-    // flex-wrap: wrap;
-   
-    
+    @include flex();
+    flex-wrap: wrap;
 
     &__card {
-        width: calc(100% / 3);
-        position: relative;
+        width: 30%;
       
-        
-        margin: $m-1;
+        align-self:flex-start;
+
+        margin: $m-1 0;
         padding: $p-2;
       
         text-align: center;
@@ -88,3 +85,11 @@
        line-height: 1.5;
       }
     }
+
+.photogallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+

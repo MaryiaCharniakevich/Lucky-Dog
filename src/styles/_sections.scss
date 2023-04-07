@@ -49,6 +49,7 @@
 
       &:hover {
         cursor: pointer;
+        color: $color-white;
       }
     }
   }
@@ -67,20 +68,7 @@
         position: relative;
   
         width: 50%;
-        height: 50rem;
-  
-        
-      }
-  
-      &_title {
-        @include alignment();
-        @include transform(-25%, -45%);
-  
-        font-size: $font-24;
-        font-weight: $font-w-700;
-  
-        color: $color-pink;
-        text-align: center;
+        height: 50rem;        
       }
   
       &_description {

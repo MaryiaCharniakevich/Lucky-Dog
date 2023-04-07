@@ -1,5 +1,7 @@
 .header {
-    @include flex ();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     padding: 0 $p-2;
     
@@ -47,11 +49,11 @@
       
       
         &_icon {
+            @include transition();
             width: 24px;
       
             &:hover {
-                cursor: pointer;
-        
+                cursor: pointer;        
                 border-radius: 5px;
                 transform: translateY(-5px);
                 box-shadow: 0 5px 10px $color-lightblue;
@@ -78,6 +80,38 @@
         padding: $p-2 $p-5;
         text-align: center;
     }
+}
+
+//dropdown
+
+
+.btn {
+    width: 100%;
+    background-color: $color-orange;
+    font-size: $font-20;
+    font-weight: $font-w-700;
+    color: $color-title;
+
+    &:hover {
+        @include transition();
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+    }
+}
+.dropdown{
+    width: 20%;
+    background-color: $color-orange;
+}
+
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    background-color: $primary-color;
+}
+
+.dropdown-item {
+    font-size: $font-16;
+    padding: $p-1;
 }
 
 
