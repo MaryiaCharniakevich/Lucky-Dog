@@ -7,7 +7,6 @@
 
     &_description {
       width: 50%;
-      // padding: $p-2;
       font-size: $font-16;
 
       text-align: center;
@@ -19,17 +18,17 @@
       font-weight: $font-w-500;
 
       color: $color-text;
-      text-align: left;
+      text-align: cente;
 
       flex-wrap: wrap;    
-      padding: $p-2;
+      padding: $p-2 0;
     }
   }
 
   &__info {
-    width: 80%;
+    width: 70%;
     padding: $p-5; 
-    margin: $m-6;  
+    margin: $m-5 $m-10;  
     text-align: center;
 
     background-color: $primary-color;
@@ -94,15 +93,6 @@
       width: 450px;
       display: flex;
       justify-content: center;
-    }
-
-    &-title {
-      padding-bottom: $p-2; 
-      font-size: $font-52;
-      font-weight: $font-w-700;
-  
-      color: $color-purple;
-      text-align: center;
     }
   }
 

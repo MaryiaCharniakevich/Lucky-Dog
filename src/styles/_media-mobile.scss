@@ -1,4 +1,4 @@
-@media only screen  and (max-width: 413.99px) {
+@media only screen  and (max-width: 575.98px) {
 
     .swiper {
         display: block;
@@ -26,6 +26,14 @@
         display: none;    
       }
 
+    .caption {
+      display: inline-flex;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      }
+
     .section__block {
         display: block;
         justify-content: center;
@@ -39,25 +47,24 @@
     
 
     .title {
-        padding: $p-1;
-        font-size: $font-32;
-        font-weight: $font-w-900;
-        line-height: 45px;
-        text-align: center;
-    
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+        
+      font-size: $font-48;
+                   
 
         &_subtitle {
-          font-size: $font-32;
+          font-size: $font-48;
           font-weight: $font-w-900;
-          line-height: 35px;
-          text-align: center;
+          
         }
       
         &-section {         
           padding: $p-1;
           margin: 0;
           
-          font-size: $font-20;
+          font-size: $font-24;
           text-align: center;
           text-decoration: overline 2px solid $color-orange;
         }
@@ -78,7 +85,7 @@
     
           padding: $p-0-5;
           color: $color-text;
-          font-size: $font-14;
+          font-size: $font-16;
           text-align: left;
         }
     
@@ -127,9 +134,12 @@
         }
       
         &__info {
-          width: 80%;
+          width: 60%;
           padding: $p-1; 
-          margin: 0 $m-4;
+          margin: $m-1;
+          margin-left: 20%;
+          font-size: $font-16;
+          text-align: center;
       
           &_btn {
            padding: $p-1 $p-2;        
@@ -162,16 +172,6 @@
             font-size: $font-14;    
     
           }
-        }
-      
-    
-        &-title {
-          padding-bottom: $p-2; 
-          font-size: $font-52;
-          font-weight: $font-w-700;
-      
-          color: $color-purple;
-          text-align: center;
         }
       }
 
@@ -209,7 +209,7 @@
         width: 260px;
         height: 60px;
       
-        margin-left: 15%;
+        margin-left: 25%;
         
         line-height: 55px;
         border-radius: 65px;
@@ -292,167 +292,3 @@
 
 
 
-@media only screen  and (max-width: 779.99px) {
-
-    .swiper {
-        display: block;
-    }
-
-    .dropdown{
-        width: 100%;
-       
-    }
-    
-    .link {         
-        font-size: $font-14;
-      }
-
-    .section__block {
-        
-        display: block;
-        justify-content: center;
-        align-items: center;        
-    }
-
-    .section {
-        width: 100%;
-    }
-
-
-    .section {
-        padding: $p-1;
-      
-        &__block {
-          display: block;
-      
-          &_image {
-            position: relative;
-      
-            width: 100%;      
-          }
-      
-      
-          &_description {
-            @include transition();
-      
-            width: 100%;
-            padding: $p-1;
-            font-size: $font-14;    
-    
-          }
-        }
-      
-    
-        &-title {
-          padding-bottom: $p-2; 
-          font-size: $font-52;
-          font-weight: $font-w-700;
-      
-          color: $color-purple;
-          text-align: center;
-        }
-      }
-
-
-      .section-1 {
-        padding: $p-0;
-        padding-bottom: $p-1;
-       
-      
-        &__block {
-          display: block;
-      
-          &_description {
-            width: 100%;
-            
-            font-size: $font-12;
-          }
-      
-          &_title {
-            font-size: $font-18;
-            font-weight: $font-w-500;
-            text-align: center;
-          }
-        }
-      
-        &__info {
-          width: 60%;
-          padding: $p-1; 
-          margin: 0 $m-2;
-          margin-left: 20%;
-      
-          &_btn {
-           padding: $p-1 $p-2;        
-      
-            font-size: $font-16;
-            font-weight: $font-w-700; 
-    
-          }
-        }
-      }
-
-    .services {
-        
-        
-        &__card {
-            width: 48%;
-            margin: $m-0-5;
-            padding: $p-1;
-        }
-    }
-
-
-    .btn-modal {
-        margin-left: 29%;
-    }
-
-    .title {
-        font-size: $font-48;
-        text-align: center;
-
-        &__subtitle {
-            font-size: $font-48;
-        }
-
-        &-section {         
-            
-            
-            font-size: $font-32;
-            text-align: center;
-            text-decoration: overline 3px solid $color-orange;
-          }
-    }
-
-    .reviews {
-        display: flex;
-
-        &__card {
-            
-            width: 33%;
-        }
-
-        &__title {
-          
-            padding: $p-1 0;
-            font-size: $font-18;   
-        }
-       
-        &__description {     
-           font-size: $font-14;
-          }
-
-        &__logo {
-            // position: absolute;
-            
-            width: 20px;
-        }
-    }
-
-    .left-block {       
-        left: -4px;
-    }
-
-    .lists {
-        display: block;
-    }
-}

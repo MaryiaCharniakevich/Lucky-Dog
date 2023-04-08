@@ -50,59 +50,63 @@ body {
   }
   
 .link {   
-    text-decoration: none; 
-    color: $color-text;
+  text-decoration: none; 
+  color: $color-text;
   
-    font-size: $font-16;
-    transition: all .5s;
+  font-size: $font-16;
+  transition: all .5s;
   }
 
 .link:hover {
     color: $color-orange;
+    background: none;
   }
+
 .img-list {
-    width: 30%; 
-      
+    width: 30%;       
 }
 
 .image {
     width: 100%;
 }
 
+.caption {
+  margin:$m-1 0;
+}
 
 
 .icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
   
-    &__icon {
-      @include transition();
-        width: 42px;
+  &__icon {
+    @include transition();
+    width: 42px;
   
-        &:hover {
-            cursor: pointer;
-    
-            border-radius: 5px;
-            transform: translateY(-5px);
-            box-shadow: 0 5px 10px $color-lightblue;
-        }
+      &:hover {
+        cursor: pointer;
+
+        border-radius: 5px;
+        transform: translateY(-5px);
+        box-shadow: 0 5px 10px $color-lightblue;
+      }
     }
   }
   
   
-  .left-block {
-    position: fixed;
-    bottom: 0;
-    left: 3%;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  
-    backdrop-filter: blur(8px);
+.left-block {
+  position: fixed;
+  bottom: 0;
+  left: 3%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  backdrop-filter: blur(8px);
   
     &_icon {
       padding: $p-0-5;
@@ -129,15 +133,11 @@ body {
 
     text-decoration: none;
     text-align: left;
-    
     color: $color-text;
-
-  
 
     &_subtitle {      
       font-size: $font-64;
       font-weight: $font-w-900;
-      // line-height: 75px;
 
       text-decoration: none;
       text-align: left;
@@ -199,8 +199,7 @@ body {
     display: grid;
     grid-template-columns: repeat(6, [col] 1fr);
     grid-template-rows: repeat(3, [row] 1fr);
-    // grid-gap: 1rem;
-
+    
     &__item {
       padding: 0;
       text-align: center;

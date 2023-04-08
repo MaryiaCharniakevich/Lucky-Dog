@@ -21,22 +21,6 @@
 
 
 .modal {
-   display: B;
-
-   &__input {
-      background-color: $color-white;
-      border-radius: 5px;
-      border: 1px solid $color-gray;
-      box-sizing: border-box;
-      color: $color-text;
-      font-size: 10px;
-   
-      outline: 0;
-      padding: $p-1;
-      width: 350px;
-      height: 60%;
-   }
-
 
    &__form {
       display: block;
@@ -80,6 +64,53 @@
       display: inline-block;
       width: 30%;
       padding: $p-1;
+
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      border: 0;
+
+      font-size: $font-14;
+      font-weight: $font-w-500;
+
+      color: $color-white;
+      background-color: $color-orange;
+
+      &:hover {
+         cursor: pointer;
+         box-shadow: 0 5px 10px rgba(77, 34, 104, .4);
+      }
+   }
+}
+
+
+
+.registration {
+
+   &__btn {
+      background: none;
+      border: 0;
+   }
+
+   &__form {
+      display: block;
+
+      &_title {
+         padding: $p-1 0;
+         font-size: $font-18;
+      }
+
+      &_subtitle {
+         padding: $p-1 0;
+         font-size: $font-14;
+         color: $color-text;
+      }
+   }
+
+   &__submit {
+      display: inline-block;
+      width: 100%;
+      padding: $p-1;      
 
       text-decoration: none;
       border-radius: 5px;

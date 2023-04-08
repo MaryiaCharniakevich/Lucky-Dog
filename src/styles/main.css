@@ -107,6 +107,7 @@ body {
 
 .link:hover {
   color: rgb(253, 152, 79);
+  background: none;
 }
 
 .img-list {
@@ -115,6 +116,10 @@ body {
 
 .image {
   width: 100%;
+}
+
+.caption {
+  margin: 1rem 0;
 }
 
 .icons {
@@ -301,6 +306,7 @@ body {
   letter-spacing: 1px;
   font-size: 20px;
   font-weight: 700;
+  border-radius: 50%;
   color: white;
   background: linear-gradient(rgb(238, 155, 130), rgb(255, 177, 32));
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
@@ -380,21 +386,6 @@ body {
   border-bottom: 1px solid black;
 }
 
-.modal {
-  display: B;
-}
-.modal__input {
-  background-color: white;
-  border-radius: 5px;
-  border: 1px solid rgb(156, 156, 156);
-  box-sizing: border-box;
-  color: rgb(39, 38, 38);
-  font-size: 10px;
-  outline: 0;
-  padding: 1rem;
-  width: 350px;
-  height: 60%;
-}
 .modal__form {
   display: block;
 }
@@ -438,6 +429,40 @@ body {
   background-color: rgb(253, 152, 79);
 }
 .modal__close:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
+}
+
+.registration__btn {
+  background: none;
+  border: 0;
+}
+.registration__form {
+  display: block;
+}
+.registration__form_title {
+  padding: 1rem 0;
+  font-size: 18px;
+}
+.registration__form_subtitle {
+  padding: 1rem 0;
+  font-size: 14px;
+  color: rgb(39, 38, 38);
+}
+.registration__submit {
+  display: inline-block;
+  width: 100%;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  border: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: rgb(253, 152, 79);
+}
+.registration__submit:hover {
   cursor: pointer;
   box-shadow: 0 5px 10px rgba(77, 34, 104, 0.4);
 }
@@ -667,14 +692,14 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: rgb(39, 38, 38);
-  text-align: left;
+  text-align: cente;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 2rem 0;
 }
 .section-1__info {
-  width: 80%;
+  width: 70%;
   padding: 5rem;
-  margin: 6rem;
+  margin: 5rem 10rem;
   text-align: center;
   background-color: rgb(238, 231, 231);
 }
@@ -724,13 +749,6 @@ body {
   width: 450px;
   display: flex;
   justify-content: center;
-}
-.section-title {
-  padding-bottom: 2rem;
-  font-size: 52px;
-  font-weight: 700;
-  color: rgb(215, 83, 122);
-  text-align: center;
 }
 
 .section-3,
@@ -784,7 +802,122 @@ body {
   font-size: 12px;
 }
 
-@media only screen and (max-width: 413.99px) {
+@media only screen and (max-width: 991.98px) {
+  .caption {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .swiper {
+    display: block;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .link {
+    font-size: 14px;
+  }
+  .section__block {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .section {
+    padding: 1rem;
+    width: 100%;
+  }
+  .section__block {
+    display: block;
+  }
+  .section__block_image {
+    position: relative;
+    width: 100%;
+  }
+  .section__block_description {
+    transition: all 0.3s;
+    width: 100%;
+    padding: 1rem;
+    font-size: 14px;
+  }
+  .section-1 {
+    padding: 0;
+    padding-bottom: 1rem;
+  }
+  .section-1__block {
+    display: block;
+  }
+  .section-1__block_description {
+    width: 100%;
+    font-size: 12px;
+  }
+  .section-1__block_title {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .section-1__info {
+    width: 60%;
+    padding: 1rem;
+    margin: 1rem;
+    margin-left: 22%;
+    font-size: 18px;
+    text-align: center;
+  }
+  .section-1__info_btn {
+    padding: 1rem 2rem;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  .services__card {
+    width: 48%;
+    margin: 0.5rem;
+    padding: 1rem;
+  }
+  .btn-modal {
+    margin-left: 33%;
+  }
+  .title {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 52px;
+    text-align: center;
+  }
+  .title__subtitle {
+    font-size: 52px;
+  }
+  .title-section {
+    font-size: 36px;
+    text-align: center;
+    -webkit-text-decoration: overline 3px solid rgb(253, 152, 79);
+            text-decoration: overline 3px solid rgb(253, 152, 79);
+  }
+  .reviews {
+    display: flex;
+  }
+  .reviews__card {
+    width: 33%;
+  }
+  .reviews__title {
+    padding: 1rem 0;
+    font-size: 18px;
+  }
+  .reviews__description {
+    font-size: 14px;
+  }
+  .reviews__logo {
+    width: 20px;
+  }
+  .left-block {
+    left: -4px;
+  }
+  .lists {
+    display: block;
+  }
+}
+@media only screen and (max-width: 575.98px) {
   .swiper {
     display: block;
   }
@@ -803,6 +936,13 @@ body {
   .messengers {
     display: none;
   }
+  .caption {
+    display: inline-flex;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
   .section__block {
     display: block;
     justify-content: center;
@@ -812,22 +952,19 @@ body {
     width: 100%;
   }
   .title {
-    padding: 1rem;
-    font-size: 32px;
-    font-weight: 900;
-    line-height: 45px;
-    text-align: center;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 48px;
   }
   .title_subtitle {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 900;
-    line-height: 35px;
-    text-align: center;
   }
   .title-section {
     padding: 1rem;
     margin: 0;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     -webkit-text-decoration: overline 2px solid rgb(253, 152, 79);
             text-decoration: overline 2px solid rgb(253, 152, 79);
@@ -845,7 +982,7 @@ body {
     line-height: 1.3;
     padding: 0.5rem;
     color: rgb(39, 38, 38);
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
   }
   .title__contacts {
@@ -882,9 +1019,12 @@ body {
     text-align: center;
   }
   .section-1__info {
-    width: 80%;
+    width: 60%;
     padding: 1rem;
-    margin: 0 4rem;
+    margin: 1rem;
+    margin-left: 20%;
+    font-size: 16px;
+    text-align: center;
   }
   .section-1__info_btn {
     padding: 1rem 2rem;
@@ -906,13 +1046,6 @@ body {
     width: 100%;
     padding: 1rem;
     font-size: 14px;
-  }
-  .section-title {
-    padding-bottom: 2rem;
-    font-size: 52px;
-    font-weight: 700;
-    color: rgb(215, 83, 122);
-    text-align: center;
   }
   .btn-main {
     width: 260px;
@@ -938,7 +1071,7 @@ body {
   .btn-modal {
     width: 260px;
     height: 60px;
-    margin-left: 15%;
+    margin-left: 25%;
     line-height: 55px;
     border-radius: 65px;
     font-size: 18px;
@@ -989,118 +1122,6 @@ body {
     left: -5px;
   }
   .grid {
-    display: block;
-  }
-}
-@media only screen and (max-width: 779.99px) {
-  .swiper {
-    display: block;
-  }
-  .dropdown {
-    width: 100%;
-  }
-  .link {
-    font-size: 14px;
-  }
-  .section__block {
-    display: block;
-    justify-content: center;
-    align-items: center;
-  }
-  .section {
-    width: 100%;
-  }
-  .section {
-    padding: 1rem;
-  }
-  .section__block {
-    display: block;
-  }
-  .section__block_image {
-    position: relative;
-    width: 100%;
-  }
-  .section__block_description {
-    transition: all 0.3s;
-    width: 100%;
-    padding: 1rem;
-    font-size: 14px;
-  }
-  .section-title {
-    padding-bottom: 2rem;
-    font-size: 52px;
-    font-weight: 700;
-    color: rgb(215, 83, 122);
-    text-align: center;
-  }
-  .section-1 {
-    padding: 0;
-    padding-bottom: 1rem;
-  }
-  .section-1__block {
-    display: block;
-  }
-  .section-1__block_description {
-    width: 100%;
-    font-size: 12px;
-  }
-  .section-1__block_title {
-    font-size: 18px;
-    font-weight: 500;
-    text-align: center;
-  }
-  .section-1__info {
-    width: 60%;
-    padding: 1rem;
-    margin: 0 2rem;
-    margin-left: 20%;
-  }
-  .section-1__info_btn {
-    padding: 1rem 2rem;
-    font-size: 16px;
-    font-weight: 700;
-  }
-  .services__card {
-    width: 48%;
-    margin: 0.5rem;
-    padding: 1rem;
-  }
-  .btn-modal {
-    margin-left: 29%;
-  }
-  .title {
-    font-size: 48px;
-    text-align: center;
-  }
-  .title__subtitle {
-    font-size: 48px;
-  }
-  .title-section {
-    font-size: 32px;
-    text-align: center;
-    -webkit-text-decoration: overline 3px solid rgb(253, 152, 79);
-            text-decoration: overline 3px solid rgb(253, 152, 79);
-  }
-  .reviews {
-    display: flex;
-  }
-  .reviews__card {
-    width: 33%;
-  }
-  .reviews__title {
-    padding: 1rem 0;
-    font-size: 18px;
-  }
-  .reviews__description {
-    font-size: 14px;
-  }
-  .reviews__logo {
-    width: 20px;
-  }
-  .left-block {
-    left: -4px;
-  }
-  .lists {
     display: block;
   }
 }/*# sourceMappingURL=main.css.map */

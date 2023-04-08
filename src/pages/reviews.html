@@ -49,7 +49,10 @@
             <li><a class="dropdown-item link" href="./vet pharmacy.html">Ветаптека</a></li>
 
             <ul class="icons" >
-                <li class="navbar__list"><a href="./personal cabinet.html"><img class="header__icons_icon" src="../img/icons/person.svg" alt="person"></a></li>
+              <li class="navbar__list">
+                <button class="registration__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="header__icons_icon" src="../img/icons/person.svg" alt="person">
+                </button></li>
+                
                 <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/ringer.svg" alt="call"></li>
                 <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/mail.svg" alt="mail"></li>
             </ul>
@@ -58,7 +61,6 @@
                 <li class="navbar__list"><a class="dropdown-item link" href="#">+37529 111 11 11</a></li>
             </ul>
         </ul>
-        
     </div>
     
     <ul class="icons messengers">
@@ -66,7 +68,7 @@
       <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/facebook.svg" alt="facebook"></li>
       <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/whatsapp.svg" alt="whatsapp"></li>
       <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/instagram.svg" alt="instagram"></li>
-  </ul>   
+    </ul>   
   </header>
 
     <main>
@@ -161,10 +163,8 @@
                 </div>
 
               </div>
-            </div>
-
-          
-        </div>
+            </div> 
+          </div>
         </section>
     </main>
 
@@ -246,44 +246,46 @@
               <label for="validationDefault02" class="modal__form_subtitle">Телефон</label>
               <input type="text" class="form-control" id="validationDefault02" required>
             </div>
-            <!-- <div class="col-md-4">
-              <label for="validationDefaultUsername" class="form-label">Username</label>
-              <div class="input-group">
-                <span class="input-group-text" id="inputGroupPrepend2">@</span>
-                <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" required>
-              </div>
-            </div> -->
-            <!-- <div class="col-md-6">
-              <label for="validationDefault03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationDefault03" required>
-            </div> -->
-            <!-- <div class="col-md-3">
-              <label for="validationDefault04" class="form-label">State</label>
-              <select class="form-select" id="validationDefault04" required>
-                <option selected disabled value="">Choose...</option>
-                <option>...</option>
-              </select>
-            </div> -->
-            <div class="col-md-3">
-              <label for="validationDefault05" class="modal__form_subtitle">Ваш отзыв</label>
-              <input type="text" class="form-control modal__input" id="validationDefault05" required>
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Ваш отзыв</label>
             </div>
-            <div class="col-12">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                <label class="form-check-label" for="invalidCheck2">
-                  Agree to terms and conditions
-                </label>
-              </div>
-            </div>
-            <!-- <div class="col-12">
-              <button class="modal__submit" type="submit">Отправить</button>
-            </div> -->
           </form>
         </div>
         <div class="modal-footer">
           <button type="button" class="modal__submit">Отправить</button>
           <button type="button" class="modal__close" data-bs-dismiss="modal">Закрыть</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal registration -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title registration__form_title" id="staticBackdropLabel">Регистрация / Вход</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label registration__form_subtitle">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label registration__form_subtitle">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <button type="submit" class="registration__submit">Войти</button>
+            </form>
         </div>
       </div>
     </div>

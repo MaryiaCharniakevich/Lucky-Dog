@@ -49,7 +49,10 @@
             <li><a class="dropdown-item link" href="./vet pharmacy.html">Ветаптека</a></li>
 
             <ul class="icons" >
-                <li class="navbar__list"><a href="./personal cabinet.html"><img class="header__icons_icon" src="../img/icons/person.svg" alt="person"></a></li>
+              <li class="navbar__list">
+                <button class="registration__btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><img class="header__icons_icon" src="../img/icons/person.svg" alt="person">
+                </button></li>
+
                 <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/ringer.svg" alt="call"></li>
                 <li class="navbar__list"><img class="header__icons_icon" src="../img/icons/mail.svg" alt="mail"></li>
             </ul>
@@ -58,7 +61,6 @@
                 <li class="navbar__list"><a class="dropdown-item link" href="#">+37529 111 11 11</a></li>
             </ul>
         </ul>
-        
     </div>
     
     <ul class="icons messengers">
@@ -145,6 +147,36 @@
           </ul>
         </nav>
     </div>
+
+
+    <!-- Modal registration -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title registration__form_title" id="staticBackdropLabel">Регистрация / Вход</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label registration__form_subtitle">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label registration__form_subtitle">Пароль</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                </div>
+                <button type="submit" class="registration__submit">Войти</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
